@@ -7,16 +7,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 */
 
 /*--------------------------------------------------------------
-selector {
-	layout(position)
-	
-	content(text)
-	
-	design(background)
-	
-	other(z-index)
-}
-----------------------------------------------------------------
 >>> COLORS:	  
 ----------------------------------------------------------------
 :root {
@@ -29,16 +19,11 @@ selector {
 ----------------------------------------------------------------
 # Universal
 # General Elements
-# Modal Navigation
 # Navigation
 # Header Area
 # Content Area
+# Aside Elements
 # Footer Area
-# Reusable Classes
-# Other
-# Templates
-# Media Queries
-
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -52,7 +37,7 @@ html * {
 # General Elements
 --------------------------------------------------------------*/
 body {
-    margin: 0;
+    margin: 0; /* Removes margin from the body */
 }
 
 /*--------------------------------------------------------------
@@ -63,12 +48,11 @@ nav ul {
 }
 
 nav ul li {
-    color: red;
+    color: red; 
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
+nav ul li a {
+    color: black; 
 }
 
 nav a:hover {
@@ -76,7 +60,7 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: purple;
+    color: purple; 
 }
 
 nav a:active {
@@ -87,32 +71,34 @@ nav a:active {
 # Header Area
 --------------------------------------------------------------*/
 header {
-    background-color: #008833;
-    padding: 1rem;
+    background-color: #008833; 
+    padding: 1rem; 
 }
 
 /*--------------------------------------------------------------
 # Content Area
 --------------------------------------------------------------*/
 main {
-    width: calc(70% - 1px);
-    float: left;
+    width: calc(70% - 1px); 
+    float: left; 
     padding: 1rem;
-    border-right: 1px solid black;
+    border-right: 1px solid black; 
 }
 
 /*--------------------------------------------------------------
 # Aside Elements
 --------------------------------------------------------------*/
 aside {
-    width: 30%;
-    float: right;
+    width: 30%; 
+    float: right; 
 }
 
 /*--------------------------------------------------------------
 # Footer Area
 --------------------------------------------------------------*/
 footer {
-    background-color: #008833;
-    text-align: center;
+    background-color: #008833; 
+    text-align: center; 
+    padding: 1rem; 
+    clear: both;
 }
